@@ -73,7 +73,6 @@ ul {
 .header {
   background-color: #fff;
   color: #353638;
-  min-height: 400px;
 }
 
 .header h1 {
@@ -93,14 +92,18 @@ ul {
 }
 .button-container {
   margin: 16px;
-  background-color: aqua;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.submit-button {
+  padding: 8px;
+  font-size: 16px;
+  width: 100px;
+}
+
 button {
-  flex: 1;
   font-family: inherit;
   padding: 16px;
   border-radius: 0.25rem;
@@ -126,6 +129,27 @@ button {
   margin-right: 10px;
 }
 
+.input-row {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  margin: 0.25rem 0;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  padding: 20px;
+}
+
+input,
+textarea {
+  width: 300px;
+}
+
 @media (max-width: 768px) {
   .header .container {
     flex-direction: column;
@@ -136,6 +160,14 @@ button {
     margin: 16px 0;
     font-size: 3.5rem;
     line-height: 1;
+  }
+
+  .input-row {
+    width: 100%;
+  }
+
+  form {
+    padding: 5px 0;
   }
 
   .boxes .container {
